@@ -56,17 +56,6 @@ header h1{
 
 }
 
-/* header #marca {
-    float: left;
-}
-header #marca h1{
-    margin: 0px;
-}
-header nav{
-    float: right;
-    margin-top: 10px;
-} */
-
 header .resaltado, header .actual a{
     color: purple;
     font-weight: bold;
@@ -140,13 +129,21 @@ footer{
     font-size: 20px;
 }
 
+/* --------FORMULARIO------ */
+
 form{
-    width: 500px;
+    width: 85%;
     display: flex;
     flex-flow: column wrap;
     box-shadow: 0px 0px 5px black;
     padding: 20px;
     margin-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+    form{
+        width: 500px;
+    }
 }
 
 .campo{
@@ -169,23 +166,20 @@ form button{
 } 
 
 .main-formulario{
+    width: 100vw;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
 }
 
-
-
 .main-index{
     width: 100vw;
-    /* max-width: 1000px;
-    margin: 0 auto;    */
+    margin: 0 auto;
 }
 
 @media (min-width: 768px) {
     .main-index{
         max-width: 1000px;
-        margin: 0 auto;
         padding: 5px;   
     }
 }
@@ -194,12 +188,3 @@ form button{
     font-size: 17px;
     width: 100%;
 }
-
-
-
-
-
-
-
-
-
