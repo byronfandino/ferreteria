@@ -1,0 +1,177 @@
+body{
+    font: 15px
+    arial, helvetica, sans-serif;
+    color:black;
+    padding: 0px;
+    margin: 0px;
+    background-color: #f4f4f4;
+}
+.contenedor{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: #fff;
+    color: black;
+    padding: 30px;
+    border-bottom: 5px solid #1293b4
+}
+header a{
+    color: blue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px
+}
+header li{
+    display: inline;
+    padding: 0px 20px 0px 20px;
+}
+header #marca {
+    float: left;
+}
+header #marca h1{
+    margin: 0px;
+}
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+header .resaltado, header .actual a{
+    color: purple;
+    font-weight: bold;
+}
+header a:hover{
+    color: red;
+    font-weight:bold;
+}
+
+/* ------TUBERIA----------- */
+
+.seccion-tuberia{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.seccion-tuberia h2{
+    font-size: 1.5em;
+    color: rgb(43, 43, 151);
+}
+
+.producto-tuberia{
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+}
+
+.producto-tuberia img{
+    width: 100%;
+    height: auto;
+}
+
+span.precio{
+    font-size: 1.4em;
+    font-weight: bold;
+    color: red;
+    margin: 1em 0;
+
+}
+
+.descripcion{
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.producto-tuberia button{
+    padding: 15px 0;
+    width: 100%;
+    font-size: 1em;
+    background-color: purple;
+    color: white;
+    border: 0px;
+}
+
+footer{
+    width: 100%;
+    background-image: radial-gradient( circle farthest-corner at 11.7% 80.6%,  rgba(249,185,255,1) 0%, rgba(177,172,255,1) 49.3%, rgba(98,203,255,1) 89% );
+    padding: 30px 0;
+    color:purple; /* Cambiamos el color de texto */
+    text-align: center;
+    font-size: 20px;
+}
+
+form{
+    width: 500px;
+    display: flex;
+    flex-flow: column wrap;
+    box-shadow: 0px 0px 5px black;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.campo{
+    margin: 7px 0px;
+    font-size: 15px;
+    padding:10px;
+}
+
+textarea.campo{
+    height: 200px;
+}
+
+form button{
+    margin-top: 10px;
+    padding:15px;
+    font-size: 15px;
+    background-color: purple;
+    color: white;
+    border: 0px;
+} 
+
+.main-formulario{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+
+
+.main-index{
+    width: 100vw;
+    /* max-width: 1000px;
+    margin: 0 auto;    */
+}
+
+@media (min-width: 768px) {
+    .main-index{
+        max-width: 1000px;
+        margin: 0 auto;   
+    }
+  }
+
+.main-index p{
+    font-size: 17px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
