@@ -7,31 +7,56 @@ body{
     background-color: #f4f4f4;
 }
 .contenedor{
-    width: 90%;
+    width: 100%;
     margin: auto;
     overflow: hidden;
 }
+
+@media (min-width: 992px) {
+    .contenedor{
+        width: 90%;
+        margin: 0 auto;   
+    }
+}
+
 ul{
     margin: 0px;
     padding: 0px;
 }
+
 header{
     background-color: #fff;
     color: black;
     padding: 30px;
     border-bottom: 5px solid #1293b4
 }
+
 header a{
     color: blue;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px
 }
+
 header li{
-    display: inline;
-    padding: 0px 20px 0px 20px;
+    display: block;
+    margin: 0px;
+    padding: 0px 20px;
 }
-header #marca {
+
+header h1{
+    display: block;
+}
+
+@media (min-width: 992px) {
+    header li{
+        display: inline-block;
+        /* padding: 0px 20px 0px 20px; */
+    }
+
+}
+
+/* header #marca {
     float: left;
 }
 header #marca h1{
@@ -40,11 +65,13 @@ header #marca h1{
 header nav{
     float: right;
     margin-top: 10px;
-}
+} */
+
 header .resaltado, header .actual a{
     color: purple;
     font-weight: bold;
 }
+
 header a:hover{
     color: red;
     font-weight:bold;
@@ -158,9 +185,10 @@ form button{
 @media (min-width: 768px) {
     .main-index{
         max-width: 1000px;
-        margin: 0 auto;   
+        margin: 0 auto;
+        padding: 5px;   
     }
-  }
+}
 
 .main-index p{
     font-size: 17px;
